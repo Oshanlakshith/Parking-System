@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logingFormContext" prefHeight="644.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogingManageFormController">
+   <children>
+      <ImageView fitHeight="644.0" fitWidth="1059.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gettyimages-96334602-612x612.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <Label layoutX="188.0" layoutY="58.0" text="SMART PARKING SYSTEM" textFill="#e0d4f8">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="239.0" layoutY="136.0" opacity="0.59" prefHeight="449.0" prefWidth="437.0" style="-fx-background-color: #dcdde1;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <children>
+            <JFXTextField fx:id="txtUName" focusColor="BLACK" labelFloat="true" layoutX="101.0" layoutY="104.0" promptText="User Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <Button layoutX="149.0" layoutY="252.0" mnemonicParsing="false" onAction="#btnLog" prefHeight="37.0" prefWidth="98.0" style="-fx-background-color: #273c75;" text="Login" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Label layoutX="104.0" layoutY="169.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="txtPassword" layoutX="101.0" layoutY="192.0" />
+            <Button layoutX="14.0" layoutY="388.0" mnemonicParsing="false" onAction="#btnCancel" prefHeight="37.0" prefWidth="98.0" style="-fx-background-color: #a5b1c2;" text="Cancel" textOverrun="CENTER_ELLIPSIS">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="83.0" fitWidth="110.0" layoutX="158.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblConform" layoutX="95.0" layoutY="228.0" prefHeight="21.0" prefWidth="219.0" textFill="RED" />
+            <Label fx:id="lblPassword" layoutX="109.0" layoutY="312.0" prefHeight="21.0" prefWidth="219.0" textFill="RED" />
+            <Label fx:id="lblName" layoutX="122.0" layoutY="289.0" prefHeight="21.0" prefWidth="147.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

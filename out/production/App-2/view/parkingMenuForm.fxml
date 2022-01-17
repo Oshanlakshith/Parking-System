@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="menuContext" prefHeight="602.0" prefWidth="908.0" style="-fx-background-color: #f1f2f6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingMenuFormController">
+   <children>
+      <ImageView fitHeight="602.0" fitWidth="1072.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/2d6cae9b196c9480f432577d52d2c52e.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur radius="0.0" />
+         </effect>
+      </ImageView>
+      <Button layoutX="695.0" layoutY="534.0" mnemonicParsing="false" onAction="#btnLogOut" prefHeight="39.0" prefWidth="173.0" style="-fx-background-color: #e74c3c;" text="log out">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="52.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnAddD" prefHeight="47.0" prefWidth="183.0" style="-fx-background-color: #27ae60;" text="Add Driver">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="53.0" layoutY="169.0" mnemonicParsing="false" onAction="#btnAddV" prefHeight="47.0" prefWidth="183.0" style="-fx-background-color: #2ecc71;" text="Add vehicle" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="48.0" layoutX="56.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/114-1146133_delivery-png-photos-light-commercial-vehicles-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="44.0" layoutX="57.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/driver-icon-vector-sign-symbol-260nw-688649995.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="82.0" layoutX="1.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="907.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1a81e1" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="3.0" layoutY="38.0" text=" Add Detail">
+         <font>
+            <Font name="Algerian" size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="51.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnParkVehicle" prefHeight="47.0" prefWidth="183.0" style="-fx-background-color: #fffa65;" text="Park Vehicle">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="51.0" layoutY="404.0" mnemonicParsing="false" onAction="#btnOnDelivary" prefHeight="47.0" prefWidth="183.0" style="-fx-background-color: #fa983a;" text="On Delivary Vehicle">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
