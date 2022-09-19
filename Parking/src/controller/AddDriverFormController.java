@@ -32,6 +32,7 @@ public class AddDriverFormController {
     public TableColumn colAddress;
     public TableColumn colContact;
 
+
     static ArrayList<Driver>drivers=new ArrayList();
     public TableColumn colDelete;
 
@@ -44,6 +45,7 @@ public class AddDriverFormController {
         colDelete.setCellValueFactory(new PropertyValueFactory<>("btn"));
 
     }
+
     public void btnCancel(ActionEvent actionEvent) throws IOException {
         URL resource = getClass().getResource("../view/parkingMenuForm.fxml");
         Parent load = FXMLLoader.load(resource);

@@ -20,27 +20,27 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Text>
-      <TextField fx:id="txtName" layoutX="187.0" layoutY="91.0" prefHeight="31.0" prefWidth="447.0" style="-fx-background-color: #fffa65;" />
+      <TextField fx:id="txtName" layoutX="187.0" layoutY="91.0" prefHeight="31.0" prefWidth="447.0" />
       <Text layoutX="115.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Text>
-      <TextField fx:id="txtNic" layoutX="187.0" layoutY="151.0" prefHeight="31.0" prefWidth="447.0" style="-fx-background-color: #fffa65;" />
+      <TextField fx:id="txtNic" layoutX="187.0" layoutY="151.0" prefHeight="31.0" prefWidth="447.0" />
       <Text layoutX="18.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driving License No.">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Text>
-      <TextField fx:id="txtLicen" layoutX="187.0" layoutY="203.0" prefHeight="31.0" prefWidth="447.0" style="-fx-background-color: #fffa65;" />
+      <TextField fx:id="txtLicen" layoutX="187.0" layoutY="203.0" prefHeight="31.0" prefWidth="447.0" />
       <Text layoutX="89.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Text>
-      <TextField fx:id="txtAddress" layoutX="187.0" layoutY="264.0" prefHeight="77.0" prefWidth="447.0" style="-fx-background-color: #fffa65;" />
+      <TextField fx:id="txtAddress" layoutX="187.0" layoutY="264.0" prefHeight="77.0" prefWidth="447.0" />
       <Text layoutX="82.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact No">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Text>
-      <TextField fx:id="txtContact" layoutX="187.0" layoutY="365.0" prefHeight="31.0" prefWidth="447.0" style="-fx-background-color: #fffa65;" />
+      <TextField fx:id="txtContact" layoutX="187.0" layoutY="365.0" prefHeight="31.0" prefWidth="447.0" />
       <Button layoutX="953.0" layoutY="349.0" mnemonicParsing="false" onAction="#btnAddDriver" style="-fx-background-color: #5352ed;" text="Add Driver" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />

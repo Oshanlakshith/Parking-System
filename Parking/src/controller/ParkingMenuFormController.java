@@ -80,4 +80,14 @@ public class ParkingMenuFormController {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void ParkingDetail(ActionEvent actionEvent) throws IOException {
+        URL resource=getClass().getResource("../view/InParkDetailForm.fxml");
+        Parent load=FXMLLoader.load(resource);
+        Scene scene=new Scene(load);
+        Stage stage=new Stage();
+        stage.setTitle("On Delivary");
+        stage.setScene(scene);
+        stage.show();
+    }
 }

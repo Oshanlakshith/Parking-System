@@ -1,24 +1,21 @@
 package view.Tm;
 
-import javafx.scene.control.Button;
-
 public class InParkTM {
     String VNumber;
     String VType;
     String PSlot;
     String PTime;
-    Button btn;
-
+    String date;
 
     public InParkTM() {
     }
 
-    public InParkTM(String VNumber, String VType, String PSlot, String PTime, Button btn) {
+    public InParkTM(String VNumber, String VType, String PSlot, String PTime, String date) {
         this.VNumber = VNumber;
         this.VType = VType;
         this.PSlot = PSlot;
         this.PTime = PTime;
-        this.btn = btn;
+        this.date = date;
     }
 
     public String getVNumber() {
@@ -53,11 +50,22 @@ public class InParkTM {
         this.PTime = PTime;
     }
 
-    public Button getBtn() {
-        return btn;
+    public String getDate() {
+        return date;
     }
 
-    public void setBtn(Button btn) {
-        this.btn = btn;
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "InParkTM{" +
+                "VNumber='" + VNumber + '\'' +
+                ", VType='" + VType + '\'' +
+                ", PSlot='" + PSlot + '\'' +
+                ", PTime='" + PTime + '\'' +
+                ", date='" + date + '\'' +
+                '}';
     }
 }

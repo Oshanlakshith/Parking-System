@@ -1,21 +1,20 @@
 package Model;
 
-public class InPark {
+public class inpark{
     String VNumber;
     String VType;
     String PSlot;
     String PTime;
+    String date;
 
-    public InPark() {
-    }
 
-    public InPark(String VNumber, String VType, String PSlot, String PTime) {
+    public inpark(String VNumber, String VType, String PSlot, String PTime, String date) {
         this.VNumber = VNumber;
         this.VType = VType;
         this.PSlot = PSlot;
         this.PTime = PTime;
+        this.date = date;
     }
-
 
     public String getVNumber() {
         return VNumber;
@@ -47,5 +46,24 @@ public class InPark {
 
     public void setPTime(String PTime) {
         this.PTime = PTime;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "InParkTM{" +
+                "VNumber='" + VNumber + '\'' +
+                ", VType='" + VType + '\'' +
+                ", PSlot='" + PSlot + '\'' +
+                ", PTime='" + PTime + '\'' +
+                ", date='" + date + '\'' +
+                '}';
     }
 }

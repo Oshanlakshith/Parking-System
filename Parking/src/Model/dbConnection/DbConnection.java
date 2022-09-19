@@ -14,7 +14,7 @@ public class DbConnection {
             connection = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/HotelManagement",
                     "root",
-                    "12345");
+                    "1234");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
