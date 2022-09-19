@@ -8,18 +8,18 @@ public class DelivaryTM {
     String DriverName;
     String Time;
     String Date;
-    Button btn;
+
 
     public DelivaryTM() {
     }
 
-    public DelivaryTM(String vehicleNumber, String vehicleType, String driverName, String time, String date, Button btn) {
+    public DelivaryTM(String vehicleNumber, String vehicleType, String driverName, String time, String date) {
         VehicleNumber = vehicleNumber;
         VehicleType = vehicleType;
         DriverName = driverName;
         Time = time;
         Date = date;
-        this.btn = btn;
+
     }
 
     public String getVehicleNumber() {
@@ -62,11 +62,14 @@ public class DelivaryTM {
         Date = date;
     }
 
-    public Button getBtn() {
-        return btn;
-    }
-
-    public void setBtn(Button btn) {
-        this.btn = btn;
+    @Override
+    public String toString() {
+        return "DelivaryTM{" +
+                "VehicleNumber='" + VehicleNumber + '\'' +
+                ", VehicleType='" + VehicleType + '\'' +
+                ", DriverName='" + DriverName + '\'' +
+                ", Time='" + Time + '\'' +
+                ", Date='" + Date + '\'' +
+                '}';
     }
 }

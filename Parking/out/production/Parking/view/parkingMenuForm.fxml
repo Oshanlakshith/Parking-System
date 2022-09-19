@@ -71,7 +71,7 @@
             <Font name="Algerian" size="34.0" />
          </font>
       </Label>
-      <Button layoutX="52.0" layoutY="377.0" mnemonicParsing="false" onAction="#btnParkVehicle" prefHeight="47.0" prefWidth="183.0" style="-fx-background-color: #fffa65;" text="Park Vehicle">
+      <Button layoutX="57.0" layoutY="315.0" mnemonicParsing="false" onAction="#btnParkVehicle" prefHeight="47.0" prefWidth="183.0" style="-fx-background-color: #fffa65;" text="Park Vehicle">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -79,15 +79,7 @@
             <InnerShadow />
          </effect>
       </Button>
-      <Button layoutX="52.0" layoutY="445.0" mnemonicParsing="false" onAction="#btnOnDelivary" prefHeight="47.0" prefWidth="183.0" style="-fx-background-color: #fa983a;" text="On Delivary Vehicle">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-         <effect>
-            <InnerShadow />
-         </effect>
-      </Button>
-      <Button layoutX="52.0" layoutY="313.0" mnemonicParsing="false" onAction="#ParkingDetail" prefHeight="47.0" prefWidth="183.0" style="-fx-background-color: #27ae60;" text="IN Park">
+      <Button layoutX="53.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnOnDelivary" prefHeight="47.0" prefWidth="183.0" style="-fx-background-color: #fa983a;" text="On Delivary Vehicle">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

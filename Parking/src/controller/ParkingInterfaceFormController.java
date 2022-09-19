@@ -94,16 +94,13 @@ public class ParkingInterfaceFormController {
     }
 
     public void DelivaryShiftOnAction(ActionEvent actionEvent) throws IOException {
+        String number = cmbVehicleNumber.getSelectionModel().getSelectedItem().toString();
+        String type = txtVehicleType.getText();
+        String driver = cmbDriver.getSelectionModel().getSelectedItem().toString();
+        String time = lblTime.getText();
+        String date = lblDate.getText();
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/OnDelivaryDetailForm.fxml"));
-        Parent parent = loader.load();
-        OnDelivaryDetailFormController onDelivaryDetail = loader.getController();
-        onDelivaryDetail.tblOnDelivary(cmbVehicleNumber.getValue(), txtVehicleType.getText(), (String) cmbDriver.getValue(), lblTime.getText(), lblDate.getText());
-        Stage stage = new Stage();
-        stage.setScene(new Scene(parent));
-        stage.setTitle("Delivary");
-        stage.show();
-
+        OnDelivaryDetailFormController.Delivary(number, type, driver, time, date);
     }
 
     public void ParkVehicleOnAction(ActionEvent actionEvent) throws IOException {

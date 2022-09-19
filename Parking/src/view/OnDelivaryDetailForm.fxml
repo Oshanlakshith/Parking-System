@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.effect.DisplacementMap?>
 <?import javafx.scene.effect.FloatMap?>
 <?import javafx.scene.effect.InnerShadow?>
@@ -11,59 +12,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="OnDeliveryDetailContext" prefHeight="540.0" prefWidth="1131.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDelivaryDetailFormController">
+<AnchorPane fx:id="OnDeliveryDetailContext" prefHeight="540.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDelivaryDetailFormController">
    <children>
-      <TextField fx:id="txtVType" layoutX="297.0" layoutY="148.0" style="-fx-background-color: #fffa65;" />
-      <TextField fx:id="txtDriver" layoutX="514.0" layoutY="148.0" style="-fx-background-color: #fffa65;" />
-      <TextField fx:id="txtTime" layoutX="726.0" layoutY="148.0" style="-fx-background-color: #fffa65;" />
-      <TextField fx:id="txtNumber1" layoutX="729.0" layoutY="253.0" />
-      <TextField fx:id="txtNumber2" layoutX="516.0" layoutY="254.0" />
-      <TextField fx:id="txtNumber3" layoutX="296.0" layoutY="252.0" />
-      <TextField fx:id="txtNumber4" layoutX="85.0" layoutY="250.0" />
-      <TextField fx:id="txtVTime" layoutX="728.0" layoutY="197.0" />
-      <TextField fx:id="txtVDriver" layoutX="515.0" layoutY="196.0" />
-      <TextField fx:id="txtVtype" layoutX="296.0" layoutY="199.0" />
-      <TextField fx:id="txtVNumbe" layoutX="85.0" layoutY="199.0" />
-      <Label layoutX="308.0" layoutY="153.0" text="Vehicle Type">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="735.0" layoutY="153.0" text=" Time">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="524.0" layoutY="153.0" text="Driver">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Label>
-      <TextField fx:id="txtVNumber" layoutX="85.0" layoutY="148.0" style="-fx-background-color: #fffa65;" />
-      <Label layoutX="96.0" layoutY="153.0" text="Vehicle Number">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Label>
-      <TextField fx:id="txtNumber41" layoutX="85.0" layoutY="360.0" />
-      <TextField fx:id="txtNumber42" layoutX="296.0" layoutY="360.0" />
-      <TextField fx:id="txtNumber43" layoutX="514.0" layoutY="360.0" />
-      <TextField fx:id="txtNumber44" layoutX="729.0" layoutY="360.0" />
-      <TextField fx:id="txtNumber45" layoutX="85.0" layoutY="302.0" />
-      <TextField fx:id="txtNumber46" layoutX="296.0" layoutY="302.0" />
-      <TextField fx:id="txtNumber47" layoutX="514.0" layoutY="302.0" />
-      <TextField fx:id="txtNumber48" layoutX="729.0" layoutY="302.0" />
-      <TextField fx:id="txtDate" layoutX="930.0" layoutY="196.0" prefHeight="31.0" prefWidth="133.0" />
-      <TextField fx:id="txtVTime41" layoutX="931.0" layoutY="250.0" prefHeight="31.0" prefWidth="133.0" />
-      <TextField fx:id="txtVTime42" layoutX="931.0" layoutY="302.0" prefHeight="31.0" prefWidth="133.0" />
-      <TextField fx:id="txtVTime43" layoutX="931.0" layoutY="360.0" prefHeight="31.0" prefWidth="133.0" />
-      <TextField fx:id="txttDate" layoutX="931.0" layoutY="148.0" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: #fffa65;" />
-      <Label layoutX="939.0" layoutY="154.0" text="Date">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="99.0" layoutX="4.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="1125.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="99.0" layoutX="4.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="978.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -88,5 +39,14 @@
             <InnerShadow />
          </effect>
       </Label>
+      <TableView fx:id="tblDriver" layoutX="18.0" layoutY="156.0" prefHeight="299.0" prefWidth="940.0">
+        <columns>
+          <TableColumn fx:id="vNomber" prefWidth="167.0" text="Vehicle No" />
+          <TableColumn fx:id="vType" prefWidth="183.0" text="Vehicle Type" />
+            <TableColumn fx:id="vDriver" prefWidth="132.0" text="Driver" />
+            <TableColumn fx:id="vTime" prefWidth="175.0" text="Time" />
+            <TableColumn fx:id="vDate" prefWidth="280.0" text="Date" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
