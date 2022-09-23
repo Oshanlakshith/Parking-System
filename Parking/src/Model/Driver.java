@@ -1,11 +1,11 @@
 package Model;
 
 public class Driver {
-    String Name;
-    String Nic;
-    String Licen;
-    String Address;
-    String Contact;
+   private String Name;
+    private String Nic;
+    private String Licen;
+    private String Address;
+    private String Contact;
 
     public Driver() {
     }

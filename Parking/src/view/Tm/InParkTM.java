@@ -1,11 +1,11 @@
 package view.Tm;
 
 public class InParkTM {
-    String VNumber;
-    String VType;
-    String PSlot;
-    String PTime;
-    String date;
+    private String VNumber;
+    private String VType;
+    private  String PSlot;
+    private  String PTime;
+    private  String date;
 
     public InParkTM() {
     }

@@ -1,10 +1,10 @@
 package Model;
 
 public class Vehicle {
-    String VNumber;
-    String VWeight;
-    String Passenger;
-    String VTypes;
+    private  String VNumber;
+    private  String VWeight;
+    private  String Passenger;
+    private  String VTypes;
 
     public Vehicle() {
     }

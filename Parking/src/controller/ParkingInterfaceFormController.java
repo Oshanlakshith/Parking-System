@@ -135,7 +135,7 @@ public class ParkingInterfaceFormController {
 
         String number = cmbVehicleNumber.getSelectionModel().getSelectedItem().toString();
         String type = txtVehicleType.getText();
-        String sloat = txtSlot.getText();
+        String sloat = lblslot.getText();
         String time = lblTime.getText();
         String date = lblDate.getText();
 

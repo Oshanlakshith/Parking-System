@@ -1,5 +1,4 @@
 package controller;
-import com.sun.org.omg.CORBA.Initializer;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;

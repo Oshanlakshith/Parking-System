@@ -1,17 +1,11 @@
 package view.Tm;
 
-import javafx.scene.control.Button;
-
 public class DelivaryTM {
-    String VehicleNumber;
-    String VehicleType;
-    String DriverName;
-    String Time;
-    String Date;
-
-
-    public DelivaryTM() {
-    }
+    private  String VehicleNumber;
+    private String VehicleType;
+    private  String DriverName;
+    private   String Time;
+    private String Date;
 
     public DelivaryTM(String vehicleNumber, String vehicleType, String driverName, String time, String date) {
         VehicleNumber = vehicleNumber;

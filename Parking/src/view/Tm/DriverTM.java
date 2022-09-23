@@ -5,12 +5,12 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.ComboBox;
 
 public class DriverTM {
-    String Name;
-    String Nic;
-    String Licen;
-    String Address;
-    String Contact;
-    Button btn;
+    private String Name;
+    private String Nic;
+    private String Licen;
+    private  String Address;
+    private String Contact;
+    private Button btn;
 
     public DriverTM() {
     }

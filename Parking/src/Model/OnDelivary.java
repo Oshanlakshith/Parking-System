@@ -1,11 +1,11 @@
 package Model;
 
 public class OnDelivary {
-    String VehicleNumber;
-    String VehicleType;
-    String DriverName;
-    String Time;
-    String Date;
+    private String VehicleNumber;
+    private String VehicleType;
+    private String DriverName;
+    private  String Time;
+    private String Date;
 
     public OnDelivary() {
     }

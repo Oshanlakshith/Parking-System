@@ -4,11 +4,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 
 public class VehicleTM {
-    String VNumber;
-    String VWeight;
-    String Passenger;
-    String VTypes;
-    Button btn;
+    private  String VNumber;
+    private  String VWeight;
+    private   String Passenger;
+    private  String VTypes;
+    private  Button btn;
 
     public VehicleTM() {
     }
